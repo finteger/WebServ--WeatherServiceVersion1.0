@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+
+<h2>Enter Weather Data for Cities</h2>
+
+<form action="/weather" method="POST">
+
+<label for="city">City:</label>
+<select name="city" id="city">
+    <option value="toronto">Toronto</option>
+    <option value="calgary">Calgary</option>
+    <option value="montreal">Montreal</option>
+    <option value="singapore">Singapore</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="london">London</option>
+    <option value="sydney">Sydney</option>
+    <option value="reddeer">Red Deer</option>
+</select>
+
+<label for="temperature">Temperature (in Celcius):</label>
+<input type="number" id="temperature" name="temperature" required>
+
+<label for="humidity">Humidity:</label>
+<input type="number" id="humidity" name="humidity" required>
+
+
+<button type="submit">Submit</button>
+</form>
+
+
+
+<h2>Upload Weather Images</h2>
+<form action="/uploadphoto" enctype="multipart/form-data" method="POST">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+<label for="desc">Description:</label>
+<input type="text" id="desc" name="desc" required><br><br>
+<input type="file" name="myImage" accept="image/*"><br><br>
+<input type="submit" value="Upload Photo">
+</form>
+
+
+<h2>Upload Weather Videos</h2>
+<form action="/uploadvideo" enctype="multipart/form-data" method="POST">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+<label for="desc">Description:</label>
+<input type="text" id="desc" name="desc" required><br><br>
+<input type="file" name="myImage" accept="video/*"><br><br>
+<input type="submit" value="Upload Video">
+</form>
+
+
+
+
+
+
+
+
+
+</html>
