@@ -18,7 +18,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 
-const url = `mongodb+srv://ToddN:Password@cluster0.7as6vrs.mongodb.net/weather`;
+const url = `mongodb+srv://YourUsername:YourPassword@cluster0.7as6vrs.mongodb.net/weather`;
 
 
 //Set connection params
